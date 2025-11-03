@@ -1,3 +1,6 @@
+# git log --graph --oneline
+<img width="874" height="159" alt="image" src="https://github.com/user-attachments/assets/f12a5468-695f-425b-8108-716d326cff88" />
+
 # Portofolio Pribadi Ananda Fahmuzna: TA-2-Praktikum-Pemrograman-Web
 
 > Repositori Tugas Akhir Praktikum Pemrograman Web (TA Percobaan 2)
