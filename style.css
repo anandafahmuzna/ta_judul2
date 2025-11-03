@@ -1,0 +1,280 @@
+/* Reset dan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #2c2c2c;
+    line-height: 1.7;
+}
+
+/* Header dan navigasi */
+.header {
+    background: linear-gradient(90deg, #3a3a3a, #4b4b4b);
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+/* Layout utama */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+.content {
+    float: left;
+    width: 70%;
+}
+
+.sidebar {
+    float: right;
+    width: 25%;
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Komponen */
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #888888;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #3a3a3a;
+}
+
+.card img {
+    display: block;
+    margin: 15px 0;
+    border-radius: 12px;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #4f4f4f, #6b6b6b);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #2f2f2f, #4f4f4f);
+    transform: translateY(-2px);
+}
+
+/* Form styling */
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #4b4b4b;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(90deg, #5a5a5a, #707070);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #333333, #4a4a4a);
+    transform: translateY(-1px);
+}
+
+.required {
+    color: #e53935;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.widget {
+    margin-bottom: 25px;
+}
+
+.widget h3 {
+    border-bottom: 3px solid #707070;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #3a3a3a;
+}
+
+.widget a {
+    color: #2c2c2c;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.widget a:hover {
+    color: #5a5a5a;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #3a3a3a, #4b4b4b);
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlight */
+.highlight {
+    background-color: #e0e0e0;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+#special {
+    color: #555;
+    font-weight: 600;
+}
+/* === Footer selalu di bagian bawah halaman === */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+/* Halaman Home */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); /* menyesuaikan tinggi layar dikurangi header + footer */
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.welcome-text h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-size: 18px;
+    color: #555;
+}
+/* Layout dua kolom untuk halaman kontak */
+.kontak-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* biar tetap rapi kalau layar kecil */
+    overflow-y: auto; /* biar bisa di-scroll kalau tinggi kontennya lebih */
+}
+
+.kontak-container .card {
+    flex: 1 1 48%; /* masing-masing ambil sekitar setengah lebar container */
+    min-width: 300px;
+}
+
+/* Biar teks & form tetap rapi */
+.info-kontak p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.info-kontak a {
+    color: #555;
+    text-decoration: none;
+}
+
+.info-kontak a:hover {
+    color: #777;
+}
